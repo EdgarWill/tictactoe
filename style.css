@@ -52,14 +52,17 @@ body {
 .tictactoe-board-col span{
 	display: inline-block;
 	vertical-align: middle;
-	width: 160px;
-	height: 203px;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: contain;
 }
 .tictactoe-board-col span.play1{
-	background: url(images/benson.png) no-repeat;
+	background-image: url(images/benson.png);
 }
 .tictactoe-board-col span.play2{
-	background: url(images/aldrin.png) no-repeat;
+	background-image: url(images/aldrin.png);
 }
 
 .tictactoe-player-col.player-1 {
