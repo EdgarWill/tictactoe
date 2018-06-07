@@ -1,0 +1,70 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: #2d2d2d;
+}
+.tictactoe-row::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.tictactoe-player-col{
+	float: left;
+	width: 25%;
+    text-align: center;
+    color: #fff;
+}
+.tictactoe-board-column{
+	float: left;
+	width: 50%;
+}
+
+.tictactoe-board::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.tictactoe-board-col{
+	float: left;
+	width: 33.33%;
+	height: 200px;
+	border: 1px solid #fff;
+	color: #fff;
+	text-align: center;
+    font-size: 100px;
+    font-family: cursive;
+    cursor: pointer;
+}
+
+.tictactoe-board-col::before{
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 0;
+	height: 100%;
+}
+
+.tictactoe-board-col span{
+	display: inline-block;
+	vertical-align: middle;
+	width: 160px;
+	height: 203px;
+}
+.tictactoe-board-col span.play1{
+	background: url(images/benson.png) no-repeat;
+}
+.tictactoe-board-col span.play2{
+	background: url(images/aldrin.png) no-repeat;
+}
+
+.tictactoe-player-col.player-1 {
+    color: #22fb98;
+}
+.tictactoe-player-col.player-2 {
+    color: #fd377d;
+}
